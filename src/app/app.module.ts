@@ -8,14 +8,24 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
+import { Camera} from '@ionic-native/camera/ngx';
+import { Badge } from '@ionic-native/badge/ngx';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+  ],
   providers: [
     StatusBar,
     SplashScreen,
+    SocialSharing,
+    Camera,
+    Badge,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

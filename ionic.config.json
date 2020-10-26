@@ -1,5 +1,8 @@
 {
   "name": "native-tutorial",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }
